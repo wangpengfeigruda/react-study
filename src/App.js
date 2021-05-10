@@ -1,15 +1,14 @@
-import  React, {Component} from 'react'
+// 根组件
+import  React, { Component, Fragment } from 'react'
 
+import Boss from './components/Boss'
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div>
-        Hello Gruda
-        {/* jsx语法 三元运算符 */}
-        <ul>
-          <li>{false ? 'baidu' : 'gruda'}</li>
-        </ul>
-      </div>
+      <Fragment>
+        {/* <Todolist /> */}
+        <Boss />
+      </Fragment>
     )
   }
 }
